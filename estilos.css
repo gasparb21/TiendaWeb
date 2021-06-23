@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.main{
+    padding: 20px;
+}
+
+.main-header{
+    padding: 0 20px;
+}
+
+.main-header__title{
+    display: flex;
+    color: #454546;
+    font-family: 'Lobster', cursive;
+    background: rgb(4, 221, 236);
+}
+
+.main-header__title h1{
+    margin: 0 auto;
+}
+
+.main-title{
+    font-family: 'Mate SC', serif;
+    text-align: center;
+}
+
+/*Estilos del menu */
+
+.main-nav {
+    opacity: 0;
+    visibility: hidden;
+}
+ 
+.menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #212121;
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    z-index: 99999;
+    transition: all 0.5s;
+}
+
+.menu__item{
+    text-align: center;
+    margin: auto;
+}
+
+.menu__link{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+.menu__link:hover{
+    background: rgb(4, 221, 236);
+    color: #212121;
+    transition: all 0.5s;
+}
+
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-header__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    
+.main-header__text {
+    display: flex;
+}
+
+.main-header__text span{
+    margin: 0 0 5px auto;
+}
+
+.main-header__text p{
+    margin: 0 auto 5px 0;
+}
+
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid #454546;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-header__btn{
+    padding: 10px 30px;
+    color: #454546;
+    border: 1px solid #454546;
+    text-decoration: none;
+}
+
+.main-header__input{
+    padding: 10px;
+}
+
+.container-slider{
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width:  400%;
+    height: 600px;
+    margin-left: -100;
+}
+
+.slider__section{
+    width: 100%;
+    position:relative
+}
+
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.slider__btn:hover{
+    background: rgb(4, 221, 236);
+}
+
+.slider__btn--left{
+    left: 10px;
+}
+
+.slider__btn--right{
+    right: 10px;
+}
+
+.slider__content{
+    position:absolute
+    top 50%;
+    left: 50%;
+    color:white;
+    transform: translate(-75%, -300%);
+}
+
+/* Estilos de productos*/
+
+.container-productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.producto{
+    border: 1px solid #454546;
+    padding: 20px;
+}
+
+.icono-producto{
+    display: block;
+}
+
+.icono-producto:hover{
+    color: rgb(4, 221, 236);
+}
+
+.img-producto{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.precio-prod{
+    color: #5c6075;
+    font-weight: bold;
+}
+
+/*Estilos de hardware*/
+
+.container-hardware{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+}
+
+.producto-hw{
+    border: 1px solid #454546;
+    padding: 20px;
+    width: 400px;
+}
+
+.imagen-hw{
+    width: 100px;
+    height: 100px;
+}
+
+/*Estilos de drumsets*/
+
+.container-drums{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.producto-drums{
+    border: 1px solid #454546;
+    padding: 20px;
+    width: 400px;
+}
+
+/*Estilos de artistas*/
+
+.product-arts{
+    background: #212121;
+}
+
+.imagen-arts{
+    height: 700px;
+    object-fit: cover;
+}
+
+.nombre-arts{
+    color:white;
+    transform: translate(75%, -2100%);
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    text-shadow: black;
+}
+
+/*Estilos del login y registro*/
+
+.body-reg{
+    background: url(img/fondo1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-reg{
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario{
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+.formulario h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-container{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.btn-reg{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-reg:hover{
+    background: rgb(4, 221, 236);
+}
+
+.reg-link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+.reg-link:hover{
+    color: rgb(4, 221, 236);
+}
+
+.img-cart{
+    width: 98px;
+    height: 98px;
+}
+
+@media screen and  (min-width:1024px) {
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+
